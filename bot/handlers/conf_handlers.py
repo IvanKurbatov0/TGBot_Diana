@@ -1,11 +1,11 @@
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 from aiogram import F
-from handlers import router, kb
-from handlers.states import Form
-from handlers.user import User
-from handlers import conference
-from handlers import users
+from bot.handlers import router, kb
+from bot.handlers.states import Form
+from bot.handlers.user import User
+from bot.handlers import conference
+from bot.handlers import users
 
 @router.message(F.text.lower() == "записаться на конференцию")
 async def agreement(msg: Message, state: FSMContext):

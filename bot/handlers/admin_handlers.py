@@ -6,14 +6,14 @@ from aiogram.types import Message, CallbackQuery
 from aiogram import F
 from pydantic.v1.validators import anystr_strip_whitespace
 
-from handlers import conference
-from handlers import router, kb, users
+from bot.handlers import conference
+from bot.handlers import router, kb, users
 from bot import config
 import re
 import datetime
 
-from handlers.start_handlers import start_handler
-from handlers.states import Admin
+from bot.handlers.start_handlers import start_handler
+from bot.handlers.states import Admin
 from bot import bot
 import asyncio
 
